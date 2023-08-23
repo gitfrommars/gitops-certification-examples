@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simple-deployment
+  name: simple-deployment-v1
 spec:
   replicas: 1
   selector:
@@ -18,3 +18,4 @@ spec:
         image: docker.io/kostiscodefresh/gitops-simple-app:v1.0
         ports:
         - containerPort: 8080
+
